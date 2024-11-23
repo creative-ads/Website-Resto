@@ -1,0 +1,25 @@
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+    --orange700: #c2410c;
+    --putih: #f8fafc;
+    --bg: #e45f2b;
+    --ijo: #34d399;
+    --abu: #94a3b8;
+    --buruhitam: #1b152e;
+  }
+
+  .cari .btn-warning {
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+  }
+
+  .cari .btn-primary,
+  .cari .btn-secondary {
+    border: none;
+  }

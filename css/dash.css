@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+    --orange700: #c2410c;
+    --putih: #f8fafc;
+    --bg: #e45f2b;
+    --ijo: #34d399;
+    --abu: #94a3b8;
+    --buruhitam: #1b152e;
+  }
+
+  .content .head-title {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+  }
+.content .head-title .left h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: var(--buruhitam);
+}
+.content .head-title .left .breadcrumb {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+.content .head-title .left .breadcrumb li {
+	color: var(--dark);
+}
+.content .head-title .left .breadcrumb li a {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+.content .head-title .left .breadcrumb li a.active {
+	color: var(--blue);
+	pointer-events: unset;
+}
+.content .head-title .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	background: var(--biru2);
+    text-decoration: none;
+	color: var(--biru5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+}
+.content .head-title .btn-download:hover {
+	background: var(--biru5);
+	color: var(--biru3);
+}
+
+
+.content .box-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 24px;
+	margin-top: 36px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+.content .box-info li {
+	padding: 24px;
+	background: #dbeafe;
+    justify-content: center;
+    text-align: center;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.content .box-info li .fa {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .box-info li:nth-child(1) .fa {
+	background: #93c5fd;
+	color: #082f49;
+}
+.content .box-info li:nth-child(2) .fa {
+	background: #fde047;
+	color: #78350f;
+}
+.content .box-info li:nth-child(3) .fa {
+	background: #86efac;
+	color: #14532d;
+}
+.content .box-info li .text h3 {
+	font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
+	font-weight: 600;
+	color: var(--dark);
+
+}
+
+.content .box-info li .text p {
+	font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.content hr {
+    border: 2px solid var(--abu);
+    margin-left: 40px;
+}
+
+
+
+.content .table-data {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: var(--dark);
+}
+.content .table-data > div {
+	border-radius: 20px;
+	background: #dbeafe;
+	padding: 24px;
+	overflow-x: auto;
+}
+.content .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+.content .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.content .table-data .order {
+	flex-grow: 1;
+    margin-left: 40px;
+	flex-basis: 500px;
+}
+
+.content .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.content .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 15px;
+	text-align: left;
+	border-bottom: 1.5px solid #1e3a8a;
+}
+
+
+
+.row .col-6 h3{
+    color: #052e16;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: default;
+    margin-top: 5px;
+}
+
+.row .col-6 p{
+    color: #052e16;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: default;
+    margin-top: 5px;
+}
+.row .col-6 {
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.15);
+}
+.row .col-6:hover {
+    transform: translateY(-4px); /* Elemen bergerak ke atas */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3); /* Bayangan menjadi lebih besar */
+}
+
+.container .row {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.row .col-10 {
+    width: 460px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.row .col-10 .one {
+    color: #451a03;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}

@@ -1,0 +1,313 @@
+:root {
+  --biru1: #02187b;
+  --biru2: #0246a7;
+  --biru3: #164de5;
+  --biru4: #1e89ef;
+  --biru5: #5cdffb;
+  --orange400: #f97316;
+  --orange700: #c2410c;
+  --putih: #f8fafc;
+  --bg: #e45f2b;
+  --ijo: #34d399;
+  --abu: #94a3b8;
+  --buruhitam: #1b152e;
+}
+
+.hero {
+  align-items: center;
+  background-color: #ffedd5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 9%,
+    rgba(255, 255, 255, 0) 51%
+  ); /* gradiasi background*/
+}
+
+.hero .items-center {
+  text-align: center;
+  background-color: none;
+  cursor: default;
+}
+
+.hero .media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 20px;
+  padding: 5px;
+  height: 20px;
+  margin-top: 30px;
+}
+
+.hero .media svg {
+  color: var(--orange700);
+  transition: 0.5s;
+}
+
+.hero .media svg:hover {
+  color: var(--orange400);
+  transform: scale(1.3);
+}
+
+hr {
+  color: var(--orange700);
+  border: 1.5px solid;
+}
+
+/* -------- SWIPER MENU MAKANA ----------*/
+.sub-menu {
+  margin-bottom: 100px;
+}
+.sub-menu .h1 {
+  text-align: center;
+  color: #431407;
+}
+.sub-menu p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  width: 240px;
+  height: 350px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.swiper-slide {
+  background-color: var(--buruhitam);
+}
+
+.img-konten {
+  width: 91.5%;
+  height: 180px;
+  background-color: var(--orange400);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 10px 10px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.title-menu {
+  text-align: center;
+}
+
+.title-menu .judul {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.title-menu h2 {
+  margin-top: 0;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.title-menu .idr {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.title-menu .button {
+  background-color: var(--orange400);
+  margin-bottom: 10px;
+  height: 30px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.title-menu .button:hover {
+  background-color: #9a3412;
+  color: white;
+}
+
+/* -------- MENU LAINNYA----------*/
+
+.sub-menu1 {
+  margin-bottom: 100px;
+  align-items: center;
+}
+.sub-menu1 .h1 {
+  text-align: center;
+  color: #431407;
+}
+.sub-menu1 p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sub-menu1 .card {
+  background-color: #0246a7;
+  border-radius: 25px;
+}
+
+/* Container untuk head-card */
+.head-card {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Grid responsif */
+@media (min-width: 601px) {
+  .head-card {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 card per baris pada layar sedang */
+  }
+}
+
+@media (max-width: 600px) {
+  .head-card {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 card per baris pada layar handphone */
+  }
+}
+
+/* Style umum untuk card */
+.head-card .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s;
+  overflow: hidden; /* Menghindari konten keluar dari card */
+}
+
+.head-card .card:hover {
+  transform: translateY(-10px);
+}
+
+.head-card .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+  height: 120px; /* Tinggi gambar tetap */
+  object-fit: cover; /* Menyesuaikan gambar agar tetap proporsional */
+  border-bottom: 0;
+}
+
+.head-card .card h1 {
+  font-size: 22px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.head-card .card h2 {
+  font-size: 16px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.head-card .card .price {
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style untuk button */
+.head-card .card .button {
+  background-color: var(--orange400);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 15px 0;
+  transition: background-color 0.3s;
+}
+
+.head-card .card .button:hover {
+  background-color: var(--orange700);
+}
+
+/* Responsif tambahan jika perlu */
+@media (max-width: 400px) {
+  .head-card {
+    grid-template-columns: 1fr; /* 1 card per baris pada layar yang sangat kecil */
+  }
+  .card {
+    max-width: 90%;
+    max-height: 200px; /* Mengatur tinggi maksimum pada tampilan mobile */
+    overflow-y: auto; /* Tambahkan scrollbar jika konten melebihi max-height */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mengatur gambar pada tampilan mobile */
+  .card img {
+    height: 100px; /* Menyesuaikan tinggi gambar untuk tampilan ponsel */
+  }
+  .head-card .card h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0;
+  }
+
+  .head-card .card h2 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 0;
+  }
+
+  .head-card .card .price {
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  /* Style untuk button */
+  .head-card .card .button {
+    background-color: var(--orange400);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+  }
+
+  .head-card .card .button:hover {
+    background-color: var(--orange700);
+  }
+}

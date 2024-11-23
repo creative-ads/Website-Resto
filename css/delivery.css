@@ -1,0 +1,49 @@
+:root {
+    --biru1:#02187b;
+    --biru2:#0246a7;
+    --biru3:#164de5;
+    --biru4:#1e89ef;
+    --biru5:#5cdffb;
+}
+
+.form-a .form-select {
+    border: 2px solid var(--biru4);
+}
+
+.table-striped .btn-warning {
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+}
+.table-striped .btn-warning:hover {
+    background-color: #b45309;
+    color: white;
+    border: none;
+}
+
+.table-striped .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+}
+.table-striped .btn-primary:hover {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+}
+
+.cari .btn-secondary {
+    background-color: #22c55e;
+    border: none;
+}
+.cari .btn-secondary:hover {
+    background-color: #166534;
+    border: none;
+    color: white;
+}
+
+.content .p1{
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 18px;
+}

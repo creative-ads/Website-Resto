@@ -1,0 +1,89 @@
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+    --orange700: #c2410c;
+    --putih: #f8fafc;
+    --bg: #e45f2b;
+    --ijo: #34d399;
+    --abu: #94a3b8;
+    --buruhitam: #1b152e;
+  }
+  .row .col-10 {
+    width: 400px;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.row .col-10 .form-a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row .col-10 .form-a input{
+    border-radius: 8px;
+}
+.row .col-10 .form-a .nm{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.row .col-10 .form-a .sub-b {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row .col-10 .form-a .btn-primary {
+    background-color: var(--orange700);
+    border: none;
+    margin-left: 135px;
+}
+.row .col-10 .form-a .btn-primary:hover {
+    background-color: var(--orange400);
+}
+
+.row .col-10 .table-striped {
+    margin-top: 10px;
+}
+
+.row .col-10 .table-striped .a {
+    font-size: 0.8rem;
+}
+
+.row .btn-group {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.row .btn-group .btn-danger {
+    background-color: var(--ijo);
+    border: none;
+}
+.row .btn-group .btn-danger:hover {
+    background-color: #15803d;
+}
+
+.row .btn-group .btn-success {
+    background-color: #dc2626;
+    border: none;
+}
+.row .btn-group .btn-warning:hover {
+    background-color: #f97316;
+}
+.row .btn-group .btn-warning {
+    border: none;
+    color: #f8fafc;
+}
+.row .btn-group .btn-success:hover {
+    background-color: #991b1b;
+}
+
+.container {
+    margin-bottom: 200px;
+    
+}

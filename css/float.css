@@ -1,0 +1,32 @@
+.floating-button {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    padding: 20px 20px;
+    background-image: url("../image/del.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+    background-position: center;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: floatAnimation 2s infinite ease-in-out;
+    z-index: 9999;
+}
+.hidden-link {
+    opacity: 0;
+}
+
+/* Animasi mengambang */
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Styling untuk konten lain */
+.content {
+    padding-top: 100px;
+}

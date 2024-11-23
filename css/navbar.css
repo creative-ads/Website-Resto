@@ -1,0 +1,163 @@
+/* General Reset */
+:root {
+  --biru1: #02187b;
+  --biru2: #0246a7;
+  --biru3: #164de5;
+  --biru4: #1e89ef;
+  --biru5: #5cdffb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--biru1);
+
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  padding-top: 20px;
+}
+
+.sidebar.collapsed {
+  width: 70px; /* Lebar sidebar saat tertutup */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--biru5);
+  padding-left: 50%;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 15px;
+}
+
+.sidebar-menu li {
+  margin: 3px 0;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  color: var(--biru5);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.sidebar-menu a i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.sidebar-menu a:hover {
+  background-color: var(--biru5);
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--biru1);
+}
+
+.menu-text {
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Sembunyikan teks menu saat sidebar tertutup */
+.sidebar.collapsed .menu-text {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+/* Content Styling */
+
+.sidebar-menu hr {
+    color: #5cdffb;
+    border: 2px solid;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 70px;
+}
+
+/* Sembunyikan ikon "close" secara default, tampilkan hanya saat sidebar dibuka */
+.close-icon {
+  display: none;
+}
+
+.sidebar.collapsed .open-icon {
+  display: inline; /* Ikon saat sidebar ditutup */
+}
+
+.sidebar:not(.collapsed) .open-icon {
+  display: none; /* Sembunyikan ikon "open" saat sidebar dibuka */
+}
+
+.sidebar:not(.collapsed) .close-icon {
+  display: inline; /* Tampilkan ikon "close" saat sidebar dibuka */
+}
+/* Gaya sidebar */
+.sidebar {
+  width: 250px; /* Lebar sidebar saat terbuka */
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 85px; /* Lebar sidebar saat tertutup */
+}
+
+/* Sembunyikan teks menu saat sidebar tertutup */
+.sidebar.closed .menu-text {
+  display: none;
+}
+
+/* Untuk menyembunyikan ikon close-icon saat sidebar tertutup */
+.sidebar.closed .close-icon {
+  display: none;
+}
+
+/* Untuk menyembunyikan ikon open-icon saat sidebar terbuka */
+.sidebar .open-icon {
+  display: none;
+}
+
+.sidebar.closed .open-icon {
+  display: inline;
+}
+
+/* Menyesuaikan lebar konten */
+.content {
+  margin-left: 250px; /* Jarak saat sidebar terbuka */
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.closed ~ .content {
+  margin-left: 60px; /* Jarak saat sidebar tertutup */
+}
+
+.sidebar-menu li a.active {
+  background-color: var(--biru5);
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--biru1);
+}

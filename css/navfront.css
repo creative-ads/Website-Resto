@@ -1,0 +1,53 @@
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+    --putih:#f8fafc;
+  }
+  /* CSS untuk Bottom Navbar di Smartphone */
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--orange400);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 10;
+}
+
+.bottom-navbar .nav-icon {
+    color: var(--putih);
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    flex: 1;
+    transition: color 0.3s;
+}
+
+.bottom-navbar .nav-icon i {
+    font-size: 20px;
+}
+
+.bottom-navbar .nav-icon span {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.bottom-navbar .nav-icon:hover {
+    color: var(--biru5);
+}
+.bottom-navbar .nav-icon.active {
+    color: #431407;
+}
+

@@ -1,0 +1,42 @@
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+    --orange700: #c2410c;
+    --putih: #f8fafc;
+    --bg: #e45f2b;
+    --ijo: #34d399;
+    --abu: #94a3b8;
+    --buruhitam: #1b152e;
+  }
+
+.container p {
+    color: var(--buruhitam);
+    margin-bottom: 0;
+}
+
+.container .h2 {
+  color: #172554;
+  font-size: 1.3rem;
+}
+.container .h3 {
+  color: #172554;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.container span {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+.container .btn-primary {
+  background-color: #1d4ed8;
+  border: none;
+}
+.container .btn-primary:hover {
+  background-color: #1e3a8a;
+  border: none;
+}

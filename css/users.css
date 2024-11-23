@@ -1,0 +1,187 @@
+/* Basic reset and body styling */
+:root {
+    --biru1: #02187b;
+    --biru2: #0246a7;
+    --biru3: #164de5;
+    --biru4: #1e89ef;
+    --biru5: #5cdffb;
+    --orange400: #f97316;
+  }
+
+/* Form container styling */
+.form-container {
+    background: #ffffff23;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+/* Logo and heading styling */
+.form-container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ff7eb3;
+}
+
+.form-container .header img {
+    width: 40px;  /* Ukuran logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Title styling */
+.form-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange400);
+    padding-left: 2px;
+    margin-bottom: 0;
+}
+
+/* Input styling */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid var(--biru4);
+    border-radius: 8px;
+    background-color: #f9f9f958;
+    transition: all 0.3s ease;
+    outline: none;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: var(--biru5);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 120, 140, 0.3);
+}
+
+/* Button styling */
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--biru2);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #172554;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(255, 120, 140, 0.3);
+}
+
+/* Switch to register link */
+.switch {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.switch a {
+    color: var(--orange400);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch span {
+    color: var(--biru5);
+}
+
+.switch a:hover {
+    color: var(--biru4);
+    text-decoration: underline;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 599px) { 
+    .form-container {
+        background: #ffffff23;
+        padding: 30px;
+        width: 80%;
+        max-width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+        margin-bottom: 40px;
+    }
+    /* Input styling */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin: 10px 0;
+    border: 2px solid var(--orange400);
+    border-radius: 8px;
+    background-color: #f9f9f948;
+    transition: all 0.3s ease;
+    outline: none;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: var(--biru5);
+    background-color: #ffffff42;
+    box-shadow: 0 0 8px rgba(255, 120, 140, 0.3);
+}
+/* Button styling */
+.form-container button {
+    width: 50%;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--orange400);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: var(--biru5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(255, 120, 140, 0.3);
+}
+}
+
+.form-container .form-select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ /* Input styling */
+ .form-container .form-select {
+    border: 2px solid var(--biru4);
+
+ }
